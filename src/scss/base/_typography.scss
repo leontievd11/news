@@ -1,0 +1,42 @@
+.title {
+    color: $blackPrimary;
+    font-weight: 700;
+
+    &--h1 {
+        margin: 0;
+        font-family: $fontSecondary;
+        line-height: 116%;
+
+        @include respond('small') {
+            font-size: 24px;
+        }
+
+        @include respond('medium') {
+            font-size: 24px;
+        }
+
+        @include respond('large') {
+            font-size: 36px;
+        }
+    }
+
+    &--h2 {
+        font-family: $fontRegular;
+        line-height: 133%;
+
+        @include respond('small') {
+            margin: 8px 0 12px 0;
+            font-size: 16px;
+        }
+
+        @include respond('medium') {
+            margin: 16px 0;
+            font-size: 18px;
+        }
+
+        @include respond('large') {
+            margin: 16px 0 24px 0;
+            font-size: 24px;
+        }
+    }
+}
